@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="style.css">
+  <title>TO-DO</title>
+</head>
+<body>
+  <header>
+    <h1>TO-DO LIST</h1>
+    <p id="funcionamento">Double-click an item to mark it as complete</p>
+    <section id="input-container">
+      <input type="text" id="texto-tarefa">
+      <button id="criar-tarefa">+</button>
+    </section>
+  </header>
+  <section id="buttons-tasks-container">
+    <section id="buttons-container">
+      <button id="salvar-tarefas"><span class="material-symbols-outlined">save</span>TASKS</button>
+      <button id="mover-cima"><span class="material-symbols-outlined">arrow_upward</span></button>
+      <button id="mover-baixo"><span class="material-symbols-outlined">arrow_downward</span></button>
+      <button id="remover-finalizados"><span class="material-symbols-outlined">delete</span>COMPLETE</button>
+      <button id="remover-selecionado"><span class="material-symbols-outlined">delete</span>SELECT</button>
+      <button id="apaga-tudo"><span class="material-symbols-outlined">delete</span>ALL</button>
+    </section>
+    <ol id="lista-tarefas"></ol>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

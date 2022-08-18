@@ -1,0 +1,132 @@
+body {
+  background-image: linear-gradient(rgb(136, 136, 136), rgb(94, 94, 94), rgb(29, 29, 29));
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+}
+header {
+  text-align: center;
+}
+
+h1 {
+  color: #ff7300;
+}
+
+button {
+  border-radius: 3px;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 5px;
+  font-size: 15px;
+}
+
+#input-container {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  width: 475px;
+  margin-left: 5px;
+}
+
+input {
+  border-radius: 2px;
+  font-size: 18px;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  width: 100%;
+}
+
+#criar-tarefa {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  padding: 0 7.8px;
+  margin-left: 5px;
+  border: 0;
+  background-color: #ff7300;
+  color: white;
+}
+
+#criar-tarefa:hover {
+  background-color: #ffbb83;
+  color: grey;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+#buttons-tasks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  width: 485px;
+}
+
+#buttons-container {
+  display: flex;
+}
+
+#buttons-container button {
+  margin: 5px;
+}
+
+#apaga-tudo, #remover-finalizados, #remover-selecionado, #salvar-tarefas {
+  display: flex;
+  align-items: center;
+}
+
+#apaga-tudo:hover, #remover-finalizados:hover, #remover-selecionado:hover {
+  background-color: rgb(233, 58, 58);
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+#salvar-tarefas:hover {
+  background-color: rgb(58, 178, 233);
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+#mover-cima:hover, #mover-baixo:hover {
+  background-color: rgb(114, 230, 99);
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+#lista-tarefas {
+  font-weight: bold;
+  width: 100%;
+  padding: 0 5px;
+  color: #ffffff;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  border: 2px solid #7c7c7c;
+  margin: 10px 5px;
+  border-radius: 3px;
+  padding: 0 10px;
+}
+
+.item:hover {
+  cursor: pointer;
+  transition: 0.25s;
+  color: #ffc89b;
+  border: 2px solid #ffc89b;
+}
+
+.completed {
+  text-decoration: line-through solid #1f1f1f;
+  color: #e01d1d;
+  border: 2px solid #e01d1d;
+}
+
+#selected {
+  color: #ff7300;
+  border: 2px solid #ff7300;
+}
